@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"express-cluster",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "express-cluster",
+    "description": "api documentation for [express-cluster (v0.0.4)](https://github.com/Flipboard/express-cluster) [![npm package](https://img.shields.io/npm/v/npmdoc-express-cluster.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-express-cluster) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-express-cluster.svg)](https://travis-ci.org/npmdoc/node-npmdoc-express-cluster)",
     "devDependencies": {
-        "express-cluster": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "express-cluster": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-express-cluster",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-express-cluster",
+    "keywords": [
+        "documentation",
+        "express-cluster"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_express_cluster.js",
+    "name": "npmdoc-express-cluster",
+    "nameAlias": "npmdoc_express_cluster",
+    "nameOriginal": "npmdoc-express-cluster",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-express-cluster"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
