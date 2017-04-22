@@ -61,12 +61,50 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.express-cluster">module express-cluster</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-cluster.express-cluster">
+            function <span class="apidocSignatureSpan"></span>express-cluster
+            <span class="apidocSignatureSpan">(arg0, arg1)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.express-cluster" id="apidoc.module.express-cluster">module express-cluster</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.express-cluster.express-cluster" id="apidoc.element.express-cluster.express-cluster">
+        function <span class="apidocSignatureSpan"></span>express-cluster
+        <span class="apidocSignatureSpan">(arg0, arg1)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">express-cluster = function (arg0, arg1) {
+  var config, fn;
+  fn = function() {};
+  config = {};
+  if (typeof arg0 === &#x27;function&#x27;) {
+    fn = arg0;
+    config = arg1 || config;
+  } else if (typeof arg1 === &#x27;function&#x27;) {
+    fn = arg1;
+    config = arg0 || config;
+  }
+  if (cluster.isMaster) {
+    return master(config);
+  } else {
+    return worker(fn, cluster.worker);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
