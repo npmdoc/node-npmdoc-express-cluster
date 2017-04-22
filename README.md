@@ -1,9 +1,14 @@
-# api documentation for  [express-cluster (v0.0.4)](https://github.com/Flipboard/express-cluster)  [![npm package](https://img.shields.io/npm/v/npmdoc-express-cluster.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-express-cluster) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-express-cluster.svg)](https://travis-ci.org/npmdoc/node-npmdoc-express-cluster)
+# npmdoc-express-cluster
+
+#### api documentation for  [express-cluster (v0.0.4)](https://github.com/Flipboard/express-cluster)  [![npm package](https://img.shields.io/npm/v/npmdoc-express-cluster.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-express-cluster) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-express-cluster.svg)](https://travis-ci.org/npmdoc/node-npmdoc-express-cluster)
+
 #### Simple drop-in for express apps to spawn multiple processes
 
-[![NPM](https://nodei.co/npm/express-cluster.png?downloads=true)](https://www.npmjs.com/package/express-cluster)
+[![NPM](https://nodei.co/npm/express-cluster.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/express-cluster)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-express-cluster/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-express-cluster%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-express-cluster/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-express-cluster/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-express-cluster/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-express-cluster/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-express-cluster/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-express-cluster/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Eden Li",
-        "email": "eli@flipboard.com"
+        "name": "Eden Li"
     },
     "bugs": {
         "url": "https://github.com/Flipboard/express-cluster/issues"
@@ -47,13 +51,11 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "eden",
-            "email": "eden@flipboard.com"
+            "name": "eden"
         }
     ],
     "name": "express-cluster",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Flipboard/express-cluster.git"
@@ -61,19 +63,10 @@
     "scripts": {
         "prepublish": "coffee -o lib/ -c src/index.coffee"
     },
-    "version": "0.0.4"
+    "version": "0.0.4",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module express-cluster](#apidoc.module.express-cluster)
-
-
-
-# <a name="apidoc.module.express-cluster"></a>[module express-cluster](#apidoc.module.express-cluster)
 
 
 
